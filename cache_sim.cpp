@@ -113,6 +113,7 @@ bool checkCache(int set, int setSizeExp,  vector<vector<int> > &cache, int tag, 
     {
 
         if (cache[i+j][0]==tag) {
+            //comment out the next line for FIFO
             cache[i+j][1]=counter;
             return true;
         }
